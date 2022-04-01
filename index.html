@@ -1,0 +1,397 @@
+<!DOCTYPE html> <!--to tell the browser what version of HTML(Hypertext Markup Language) document you are writing-->
+<!-- if you didn't write DOCTYPE render mode = quirks mode // if you write DOCTYPE render mode = standards mode-->
+<html lang="en"><!--opening tag--> <!-- lang="en" good for accessibilty-->
+    <head>
+        <!-- meta tags will not appear on the web page this is a data or instruction to the Browser -->
+        <meta charset="UTF-8"/> <!--character set = specify the character encoding for the HTML document // self-closing tag --> 
+        <title>Book Store</title> <!--while be shown on tab and as title on google search-->
+        <meta name="description" content="Book Store" /> <!--will be shown as description on google search-->
+        <!-- when you declare attribute you can write single quot or double quot 
+        and if the value only one word you can writ it without quotation if more than one word the attribute will take only the first word -->
+        <style></style> <!-- for css codes -->
+        <script></script> <!--for Java scripts codes-->
+        <link rel="stylesheet" href=""> <!-- the link element creates a link between your HTML doument and an external resource // the rel attribute specifies the relationship between two documents-->
+    </head>
+    <body>
+        <h1> <!--when you inspect you will find user agent style sheet and add some styles to specialize the h1-->
+            <!-- user agent style sheet builtin in browser (chrome) -->
+            Book Store
+        </h1>
+            <h2>Book Store</h2>
+                <h3>chapter title inside book</h3>
+                    <h4>story title inside chapter</h4>
+                        <h5>more tiltes</h5>
+                            <h6>more titles</h6>
+        <!-- we have 2 types on elements ( block element and inline element ) 
+        block element = always starts on a new line
+        inline element = does not start on a new line-->
+        <!-- class is global attribute used to select and access this element and do a change to them all by CSS and JS like (title , style , class, id, hidden )
+        you can write class attribute with or without quotation marks but if you will write something after class like ID you should write quotation-->
+        <p class="one"> This is my <b>Book Store</b>, welcome</p> <!--block element--> <!--<b> Bold-->
+        <p class="two"> This is my <strong>Book Store</strong>, welcome</p> <!--<strong> = <b> + important text // the difference that search engine will recognize it as important also usefull for blind people-->
+        <p class="three"> This is my <i>Book Store</i>, welcome</p> <!-- <i> italic <em> and <strong> are semantic tags <i> and <b> not-->
+        <p class="four"> This is my <em>Book Store</em>, welcome</p> <!--<em> =  <i> + important text Emphasized-->
+        <p class="five"> This is my Book Store,<mark>welcome</mark></p> <!--<mark> =  higlight the word with yellow-->
+        <p class="six"> This is my Book Store,<u>welcome</u></p> <!--<u> = underline -->
+        <p class="seven"> This is my Book Store,<small>welcome</small></p> <!--<small> = smaller size -->
+        <p class="eight"> This is my Book Store,<del>welcome</del></p> <!--<del> = to mark a word as deleted -->
+        <p class="nine"> old price <del>100$</del> new Price 80$</p> <!--<del> = to mark a word as deleted -->
+        <p class="ten"> This is my Book Store and <ins>Magazine Store</ins>, welcome</p> <!--<ins> = insert opposite of <del> // <ins> is semantic tag but <u> not -->
+        <p class="eleven"> h<sup>2</sup>o</p> <!--<sup> = used in chemistry or math ( 2 will be up) -->
+        <p class="twilve"> h<sub>2</sub>o</p> <!--<sub> = used in chemistry ( 2 will be down) -->
+        <!-- we have 2 types of attributes : ( global attribute and element attribute)
+        global attribute you can use it on any tags and anywhere in html file like hidden 
+        element attribute specific to each tag like src in img tag -->
+        <p hidden>We have a big Sale</p> <!--hiddden is global attribute  -->
+        <span>Black friday</span> <!--inline element--><!--you can write the word without <span>-->
+        <span>cyber monday</span> <!-- the use of span to select and access this element and do a change to them all by CSS and JS-->
+        <hr>
+        <!--src = source , alt = alternate Text--> <!-- element attribute // also like <link rel="stylesheet" href=""> -->
+        <!--you can add the link of photo from website in src-->
+        <img src="https://image.shutterstock.com/image-vector/black-friday-super-sale-realistic-600w-1841495770.jpg" alt=""> 
+        <!--you can add a photo from the same folder in src by writing only it's name-->
+        <img src="black.jpg" alt=""> <!--img is inline element but if it's big it will act as block element-->
+        <img src="imgs/black.jpg" alt=""> <!--or you can choose from another folder-->
+        <img src="../black.jpg" alt=""> <!--if it it outside the folder you can move backword by ../-->
+        <img src="/Users/mido1_88/Desktop/games/black.jpg" alt=""> <!--if it it outside the folder you can write the path-->
+        <img src="/Users/mido1_88/Desktop/games/black.jpg" alt="" width="200px" height="200px"> <!--width and height to control size of img-->
+        <img src="missing-image.jpg" alt="no worries it's a test"> <!--alt = it's a message will show up only if the image not found -->
+        <hr>
+        <a href="https://www.google.com/" target="_blank">Google</a> <!-- a = anchor --> <!-- <a> inline element--> <!-- target="_blank" will open the link in new tab-->
+        <a href="https://www.facebook.com/" target="_blank" title = "Go to Facbook">Facebook</a> <!--title ="" when the mouse point to the word a message will pop out-->
+        <a href="test.html" target="_blank" title = "Go to my local page ">local test</a> <!--you can use href also with file on your computer-->
+        <a href="#soliman"  title = "Go to soliman ">soliman paragraph</a> <!--you can use href also to go to specific paragraph (with special id) and write this id after # in href attribute-->
+        <a href="mailto:o@nn.sa"  title = " Mail ">contact me</a> <!--you can use href also to go to mail (mailto: the Email you want to recieve Emails to it)-->
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque. Autem nihil accusantium quibusdam natus. Ipsam, assumenda aspernatur! Illo veritatis repellendus magnam totam molestiae nesciunt, perferendis minus iure libero ea?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque. Autem nihil accusantium quibusdam natus. Ipsam, assumenda aspernatur! Illo veritatis repellendus magnam totam molestiae nesciunt, perferendis minus iure libero ea?</p>
+        <p id="soliman"> <i><u><b>here is soliman ID</b></u></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque. Autem nihil accusantium quibusdam natus. Ipsam, assumenda aspernatur! Illo veritatis repellendus magnam totam molestiae nesciunt, perferendis minus iure libero ea?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque. Autem nihil accusantium quibusdam natus. Ipsam, assumenda aspernatur! Illo veritatis repellendus magnam totam molestiae nesciunt, perferendis minus iure libero ea?</p>
+        <p>Lorem ipsum dolor <br/> sit amet consectetur adipisicing elit.Accusamus, cumque. Autem nihil accusantium quibusdam natus. Ipsam, assumenda aspernatur! Illo veritatis repellendus magnam totam molestiae nesciunt, perferendis minus iure libero ea?</p>
+        <!-- <br/> is like \n to create new line -->
+        <!-- <hr/> horizontal rule to create new line and draw separetaing line -->
+        <hr>
+        <ul><!-- unordered lis-->
+            <li>HTML</li> <!--list item-->
+            <li>CSS</li>
+            <li>
+                JS
+                <ul> <!--nested ul -->
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Vuejs</li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <ol reversed> <!-- reversed attribute to reverse the list-->
+            <li>Name</li> <!--will add no. to order the list -->
+            <li>address</li>
+            <li>ID</li>
+        </ol>
+        <hr> 
+        <ol start="100"> <!-- start attribute to start from specific position-->
+            <li>Name</li> 
+            <li>address</li>
+            <li>ID</li>
+        </ol> 
+        <hr>
+        <ol type="a"> <!-- type="1" count by numbers // type="a" capital or small count by alphabetic // typr="I" roman count-->
+            <li value="3">Name</li> <!-- you can add value="" in <li> instead of start="" in <ol>-->
+            <li>address</li> <!-- or you can add both type="a" and value="" to start from third letter c-->
+            <li>ID</li>
+        </ol>
+        <hr>
+        <dl> <!-- description list-->
+            <dt>HTML</dt> <!-- description term-->
+            <dd>the language of web</dd> <!-- desciption of description term-->
+            <dt>CSS</dt> <!-- description term-->
+            <dd>the language of visuals</dd> <!-- desciption of description term-->
+        </dl> 
+        <!-- table have also header(thead) footer(tfoot) and body(tbody) those are optional you can use them or not-->
+        <hr>
+        <table border ="1" cellpadding = "20px"> <!--here red color because it's better to use CSS // cellpadding spaces between cells-->
+            <caption>Students Marks</caption> <!--table title-->
+            <thead>
+                <tr> <!--table row-->
+                    <th>First</th> <!--table header cell will change text to Bold -->
+                    <th>Last</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>mohamed</td> <!--table data-->
+                    <td>soliman</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>mohamed</td>
+                    <td>soliman</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>mohamed</td>
+                    <td>soliman</td>
+                    <td>33</td>
+                </tr>
+            </tbody>
+            <tfoot> <!--you can write for example tfoot before thead it will not affect the arrange of the table-->
+                <tr>
+                    <!-- we removed one of <td> from here and merge it with next <td> by colspan="2"-->
+                    <td colspan="2">Total</td>
+                    <td>99</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <div> <!-- division = is a containter for group of elements used to select and access a group of elements and do a change to them all by CSS and JS-->
+            <h1>Book Store</h1>
+            <p>This is my Book Store, Welcome</p>
+        </div>
+        <div class="all divisions of books">
+            <div class="romantic">
+                <div class="book1">
+                    <h3>Book title</h3>
+                    <p>Book description</p>
+                    <span>$100</span>
+                </div>
+            </div>
+            <div class="police">
+                <div class="book2">
+                    <h3>Book title</h3>
+                    <p>Book description</p>
+                    <span>$100</span>
+                </div>
+            </div>
+            <div class="fantasy">
+                <div class="book3">
+                    <h3>Book title</h3>
+                    <p>Book description</p>
+                    <span>$100</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Entities every sympol has a code but all must start with & and ends with ; // < lt=less than , > gl= greater than ,& amp, copyright symbol = &copy;-->
+        <p>test for &copy; Entities</p> 
+        <!-- semantic elements = same like div but only with expressive name // can also take class-->
+        <hr>
+        <header></header>
+        <nav></nav> <!-- navigation-->
+        <section></section>
+        <aside></aside> <!-- side bar-->
+        <article></article>
+        <footer></footer>
+        <audio controls autoplay loop muted>
+<!-- autopaly attribute play on some Browsers // will not autoplay at Chrome   -->
+<!-- you can add audio by two ways attribute src="" or source tag-->
+<!-- attribute controls to add buttons to play the file -->
+<!-- the advantage to use source tag that you give the Browser option if he can't play from 1st source he can use the 2nd source for example different extension-->
+<!-- MIME Type each type of audio file have special MIME type // for example Mp3 it's MIME type is audio/mpeg -->
+            <source src="media/audio-test.mp3" type="audio/mpeg"> 
+            <source src="media/audio-test.ogg" type="audio/ogg"> 
+            <source src="media/audio-test.wav" type="audio/wav">
+            your Browser does not support Audio Tags <!--this message will apear if the browser does not support this audio type-->
+        </audio>
+        <hr>
+        <!--same comments of audio tag-->
+        <!-- poster="" a pic will appear till the Browser load the video and start to play it -->
+        <!-- preload attribute = preload has three values None / metadata / auto -->
+        <!-- the Browser when it loads the page ot will downlaod metadata of video and the video itself and this called preload = "auto"
+        but you can change it to None (fastet but you have to know the video's size to make placeholder by yourself)
+        or you can change it to metadata (easy to setup the Browser will downlaod only some data not all data like dimesion of video ) -->
+        <!-- if you put autoplay the Browser will ignore preload attribute -->
+        <!-- <video controls autoplay width="400" height="200" loop muted poster="imgs/black.jpg"> 
+            <source src="https://youtu.be/sMB_ozpcBHI" type="video/mp4">
+            your Browser does not support Video Tags
+            <track src="my_file.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="my_file_ar.vtt" kind="subtitles" srclang="ar" label="Arabic">
+        </video> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sMB_ozpcBHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+        <form action="" method="get" novalidate target="_blank"> 
+            <!-- traget="_blank will open an new tab after submition" -->
+            <!-- when you use method Post the Bowser will give you error when you refresh the page because when you refresh will send the data to backend again 
+            you can solve this by changing Post to get or by PRG(POST/Redirect/Get) method // PRG used to avoid duplicate form submission when you for exp. refreshing confirmation page in online shop-->
+            <!--novalidate you can save and send data without filling every input  -->
+            <!-- get method inserted data will appear at url link but with post method will not -->
+            <!--action attribute to where send the data you inserted below-->
+            <input type="hidden" value="M.Soliman"> <!-- will not appear used for example when a user insert his email and pass you want to send also his id with the inserted data to backend-dev-->
+            <div>
+                <label >User Name</label> <!--to descripe the type of input-->
+                <input type="text" required placeholder="please insert your username" name="input1" readonly value="soliman"> 
+                <!--name attribute to mark each input with specific name when you send data to another file for Backend-developer-->
+                <!-- inline element // self-closing tag // required attribut to give you message that you have to fill this input when you press submit-->
+                <!--readonly you can't change it anymore and we used value attribute to insert the unchangable input-->
+            </div>
+            <br> <!--to make space between two inputs-->
+            <div>   
+                 <label>Password</label>
+                <input type="password" required name="input2" autofocus minlength="6" maxlength="10"> 
+                <!-- type password will hide what you type inside input-->
+            </div>
+            <br>
+            <div>   
+                <label>Email</label>
+                <input type="email" placeholder="Your Email" value="old@Email" name="input3" disabled> 
+               <!-- value you can write here what will appear at input -->
+               <!-- disable attribute ( this input will not send to backend-dev) -->
+               <!-- difference between readonly and disabled both unchangabel but readonly data will be sent but diesabled not -->
+            </div>
+            <br>
+            <div>   
+                <label>Color</label>
+                <input type="color" name="color">
+            </div>
+            <br>
+            <div>   
+                <label>Range</label>
+                <input type="range" name="range" min='0' max="100" step="20" value="0"> <!--value="0" start from where-->
+            </div>
+            <br>
+            <div>   
+                <label for="num">number</label>
+                <input id="num" type="number" name="range" min="0" max="100" step="5" value="15"> <!--value="0" start from where-->
+                <!--( for and id )we can here link input and label (when you press on number label it will autofocus) -->
+            </div>
+            <br>
+            <div>
+                <input id= "win" type="radio" name="OS" value="Windows">
+                <label for="win">Windows</label>
+                <!-- to link the input with label we use id and for attributes -->
+            </div>
+            <div>
+                <input id="mac" type="radio" name="OS" value="Mac" checked> <!-- when the page reload Mac option will be checked automatically-->
+                <label for="mac">Mac</label>
+            </div>
+            <div>
+                <input id="lin" type="radio" name="OS" value="Linux">
+                <label for="win">Linux</label> <!--you can add link input with another label no problem-->
+            </div>
+            <!-- difference between radio and checkbox 
+                with checkbox you can choose more than one option or all
+                but radio only one option -->
+            <br>
+            <div>
+                <input id= "win1" type="checkbox" name="OS" value="Windows"> <!-- name and value will sent to backend-->
+                <label for="win1">Windwos</label>
+                <!-- to link the input with label we use id and for attributes -->
+            </div>
+            <div>
+                <input id="mac1" type="checkbox" name="OS" value="Mac" checked> <!-- when the page reload Mac option will be checked automatically-->
+                <label for="mac1">Mac</label>
+            </div>
+            <div>
+                <input id="lin1" type="checkbox" name="OS" value="Linux">
+                <label for="win1">Linux</label> <!--you can add link input with another label no problem-->
+            </div>
+            <hr>
+            <label for="coun">Choose country</label>
+            <select id="coun" name="country" multiple> <!--you can choose more than one option by holding cmd-->
+                <optgroup label="g1"> <!-- option group-->
+                    <option value="1">Egypt</option>
+                    <option value="2">Germany</option>
+                    <option value="3">Kuwait</option>
+                </optgroup>
+                <optgroup label="g2">
+                    <option value="4"selected>lebanon</option>
+                    <option value="5">thailand</option>
+                    <option value="6">USA</option> <!-- value sent to backend not the text we wrote in option -->
+                </optgroup>
+            </select>
+            <hr>
+            <textarea name="subject" id="" cols="30" rows="10" placeholder="please insert your text"></textarea> 
+            <br>
+            <input type="reset" value="reset">
+            <input type="submit" value="save" > <!-- if you want to change the name of submit you can use value=""-->
+            <br>
+            <hr>
+            <label>Upload</label>
+            <input type="file" >
+            <hr>
+            <label>search</label>
+            <input type="search" >
+            <hr>
+            <label>URL</label>
+            <input type="url" >
+            <hr>
+            <label>Date</label>
+            <input type="Date" value="1982-10-25">
+            <hr>
+            <label>Month</label>
+            <input type="month" value="1982-10">
+            <hr>
+            <label>Time</label>
+            <input type="time" >
+            <hr>
+            <label>programming languages</label>
+            <input list="programming" name="prog" >
+            <datalist id="programming"> <!--datalist like select but you can here search-->
+                <!-- here we linked datalist and input by list="" and id="" -->
+                <option value="python"></option>
+                <option value="C"></option>
+                <option value="PHP"></option>
+                <option value="C#"></option>
+            </datalist>
+        </form>
+        <hr>
+        <q>this is quot</q> <!-- "" inline element-->
+        <blockquote>this is Block</blockquote> <!-- semantic tag like <q> but the text will not start from the beginning of line-->
+        <hr>
+        <button>Click</button>
+        <hr>
+        <div>
+            https://www.samsung.com/<wbr>us/watches/galaxy-watch4/buy/?<br>modelCode=SM-R860NZKAXAA
+            <!-- wbr = word break opportunity break a line and start from new line 
+            difference between wbr and br that wbr will break the line if it is too long and will not fit the screen but br will break the line anyway-->
+        </div>
+        <hr>
+        <p>2 السلام welcome</p>
+        <p> <bdi>السلام</bdi> 2 welcome</p> 
+        <!-- bdi = bi directional isolation to isolate specicf word will be usefull when type 2 languages with 2 different directions like arabic and english-->
+        <hr>
+        <code>
+            var x = 10;
+            var y = 20;
+            console.log(x + y);
+        </code>
+        <hr>
+        <pre> <!-- pre-formatted text with pre tag the text will appear as it is with spaces p tag not-->
+            This Is
+            pre 
+            formatted
+            text
+        </pre>
+        <hr>
+        <pre>
+            <code>
+                var x = 10;
+                var y = 20;
+                console.log(x + y);
+            </code>
+        </pre>
+        <hr>
+        <iframe src="https://elzero.org/" frameborder="0" style="width: 100%; height: 400px;"></iframe> 
+        <!--to add website inside this page but some website refuse iframe-->
+        <!-- frameborder ="0" no borders around webpage // frameborder="1" border around webpage-->
+        <hr>
+        <form action="">
+            <input type="text">
+            <button>send</button> <!--you can press tab to move between buttons-->
+            <button>reset</button>
+        </form>
+        <hr>
+        <!-- you can use <div> as checkbox because it will be easier to move netween options by TAB and this is better for accessiblity -->
+        <div id="plan1" role="checkbox" aria-checked="true" tabindex="4">plan one</div>
+        <label for="plan1"></label>
+        <div role="checkbox"  tabindex="0">plan two</div>
+        <div role="checkbox"  tabindex="0">plan three</div>
+        <!-- aria-checked like checked in checkbox // tabindex to move between them by TAB -->
+        <!-- tabindex="0" allows elements that are not natively focus such as (<div> <span> <p> <a> with no href) to recieve keyboard focus
+            tabindex="-1" remove the element from the default navigation flow don't do it with buttons and links
+            tabindex= positive no. cause unexpected TAB order try to avoid this-->
+        
+    </body> 
+</html> <!--closing tag -->
+
